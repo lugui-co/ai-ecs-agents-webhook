@@ -58,6 +58,7 @@ app = FastAPI()
 #        print(f"Erro na verificação: {str(e)}")
 #        raise HTTPException(status_code=400, detail="Invalid request")
 #
+
 @app.get("/health")
 async def health_check():
     return {"status": "healthy"}
